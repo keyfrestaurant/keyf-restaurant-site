@@ -3,179 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Key-f Restaurant & Cafe | Didim Marina</title>
-  <meta name="description" content="Key-f Restaurant & Cafe. Didim Marina'da deniz manzarası eşliğinde kahvaltı, deniz ürünleri, şarap ve seçkin lezzetler." />
+  <title>Key-f Restaurant & Cafe | Didim</title>
+  <meta name="description" content="Didim Marina’da kahvaltı, öğle ve akşam yemeği için Key-f Restaurant & Cafe." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="site-header">
-    <div class="container nav" style="display:flex; justify-content:space-between; align-items:center; gap:20px;">
-      <a href="/" class="brand">Key-f Restaurant &amp; Cafe</a>
+    <div class="header-inner">
+      <a href="#top" class="logo">Key-f Restaurant &amp; Cafe</a>
 
-      <div style="display:flex; align-items:center; gap:18px; flex-wrap:wrap;">
-        <nav>
-          <a href="#about">Hakkımızda</a>
-          <a href="#highlights">Neden Key-f?</a>
-          <a href="#menu">Menü</a>
-          <a href="#contact">İletişim</a>
-        </nav>
+      <nav class="main-nav">
+        <a href="#about">Hakkımızda</a>
+        <a href="#why">Neden Key-f?</a>
+        <a href="#menu">Menü</a>
+        <a href="#contact">İletişim</a>
+      </nav>
 
-        <div style="display:flex; gap:8px; align-items:center;">
-          <a href="index.html" style="padding:6px 10px; border:1px solid rgba(255,255,255,0.35); border-radius:6px; text-decoration:none; color:#fff; font-size:13px; font-weight:600; background:rgba(255,255,255,0.12);">TR</a>
-          <a href="en.html" style="padding:6px 10px; border:1px solid rgba(255,255,255,0.25); border-radius:6px; text-decoration:none; color:#fff; font-size:13px; font-weight:600;">EN</a>
-        </div>
+      <div class="lang-switch">
+        <a href="index.html" class="lang-btn active">TR</a>
+        <a href="en.html" class="lang-btn">EN</a>
       </div>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <img src="hero.jpg" alt="Key-f Restaurant & Cafe deniz manzaralı restoran atmosferi" class="hero-image" />
+  <main>
+    <section class="hero" id="top">
       <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="eyebrow">Didim Marina</p>
+
+      <div class="hero-content">
+        <p class="hero-subtitle">Didim Marina</p>
         <h1>Key-f Restaurant &amp; Cafe</h1>
 
-        <div class="hero-actions" style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:28px;">
-          <a
-            href="https://keyfrestaurant.qr.menulux.com"
-            target="_blank"
-            rel="noopener"
-            style="display:inline-block; padding:14px 28px; background:#ffffff; color:#111111; text-decoration:none; border-radius:8px; font-size:16px; font-weight:600;"
-          >
-            Menüyü Gör
-          </a>
-
-          <a
-            href="https://wa.me/905325587784?text=Merhaba%2C%20Key-f%20Restaurant%20%26%20Cafe%20i%C3%A7in%20rezervasyon%20yapmak%20istiyorum.%0A%0ATarih%3A%0AKi%C5%9Fi%20say%C4%B1s%C4%B1%3A%0ASaat%3A"
-            target="_blank"
-            rel="noopener"
-            style="display:inline-block; padding:14px 28px; background:#c8a97e; color:#111111; text-decoration:none; border-radius:8px; font-size:16px; font-weight:600;"
-          >
-            Rezervasyon
-          </a>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-secondary">Menüyü Gör</a>
+          <a href="https://wa.me/905000000000" target="_blank" class="btn btn-primary">Rezervasyon</a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section" style="padding-top:90px; padding-bottom:90px;">
-      <div class="container" style="max-width:860px; text-align:center;">
-        <p class="section-label">Hakkımızda</p>
-        <h2 style="margin-bottom:24px;">Burada zaman yavaşlar, keyif başlar.</h2>
-
-        <p style="font-size:18px; line-height:1.9; color:#333; margin:0;">
-          Görkemli deniz manzaramız eşliğinde, Ege’nin sakinliğini ve sofranın keyfini bir araya getiriyoruz.
-          Kahvaltıdan akşam yemeğine uzanan özenli lezzetlerimizle sakin, şık ve samimi bir deneyim sunuyoruz.
+    <section id="about" class="content-section section-light">
+      <div class="section-container">
+        <span class="section-eyebrow">HAKKIMIZDA</span>
+        <h2>Didim Marina’da keyifli sofralar</h2>
+        <p>
+          Deniz manzarası eşliğinde kahvaltıdan akşam yemeğine uzanan, sakin ve özenli bir deneyim sunuyoruz.
+          Günün her anına eşlik eden lezzetlerimizle Key-f’te zaman biraz daha yavaş akar.
         </p>
       </div>
     </section>
 
-    <section class="quick-actions" style="padding-top:10px;">
-      <div class="container quick-grid">
-        <a class="quick-card" href="https://wa.me/905325587784?text=Merhaba%2C%20Key-f%20Restaurant%20%26%20Cafe%20i%C3%A7in%20rezervasyon%20yapmak%20istiyorum.%0A%0ATarih%3A%0AKi%C5%9Fi%20say%C4%B1s%C4%B1%3A%0ASaat%3A" target="_blank" rel="noopener">
-          <span>WhatsApp</span>
-          <strong>Rezervasyon Yap</strong>
-        </a>
-        <a class="quick-card" href="https://keyfrestaurant.qr.menulux.com" target="_blank" rel="noopener">
-          <span>Menü</span>
-          <strong>Menüyü Gör</strong>
-        </a>
-        <a class="quick-card" href="https://www.google.com/maps/search/?api=1&query=Key-f+Restaurant+%26+Cafe+Didim" target="_blank" rel="noopener">
-          <span>Konum</span>
-          <strong>Haritada Aç</strong>
-        </a>
+    <section id="why" class="content-section section-soft">
+      <div class="section-container">
+        <span class="section-eyebrow">NEDEN KEY-F?</span>
+        <h2>Manzara, huzur ve özenli lezzetler bir arada</h2>
+        <p>
+          Marina atmosferi, özenle hazırlanan tabaklar ve dingin ortamıyla Key-f; sadece yemek yemek için değil,
+          anın tadını çıkarmak için de tercih edilen bir duraktır.
+        </p>
       </div>
     </section>
 
-    <section id="highlights" class="section soft-bg">
-      <div class="container">
-        <p class="section-label">Neden Key-f?</p>
-        <h2>İlk bakışta neden Key-f?</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Marina Manzarası</h3>
-            <p>Didim Marina atmosferinde günün her saatine uygun sakin, şık ve davetkâr bir ortam.</p>
-          </article>
-          <article class="card">
-            <h3>Özenli Lezzetler</h3>
-            <p>Kahvaltıdan akşam yemeğine uzanan, dengeli ve rafine bir yeme-içme deneyimi.</p>
-          </article>
-          <article class="card">
-            <h3>Kolay Rezervasyon</h3>
-            <p>WhatsApp üzerinden hızlı iletişim ve pratik rezervasyon imkânı.</p>
-          </article>
+    <section id="menu" class="content-section section-light">
+      <div class="section-container">
+        <span class="section-eyebrow">MENÜ</span>
+        <h2>Lezzetleri keşfedin</h2>
+        <p>Günün her anına eşlik eden özel lezzetlerimizi keşfedin.</p>
+
+        <div class="menu-buttons">
+          <a href="https://keyfrestaurant.qr.menulux.com" target="_blank" class="btn btn-secondary">Menüyü Gör</a>
+          <a href="https://wa.me/905000000000" target="_blank" class="btn btn-primary">WhatsApp ile Rezervasyon</a>
         </div>
       </div>
     </section>
 
-    <section id="menu" style="text-align:center; padding:70px 20px; background:#f8f5ef;">
-      <h2 style="font-size:30px; margin-bottom:18px;">MENÜ</h2>
+    <section id="contact" class="content-section section-soft">
+      <div class="section-container">
+        <span class="section-eyebrow">REZERVASYON</span>
+        <h2>Masanızı Ayırtın</h2>
+        <p>Rezervasyonunuzu kolayca oluşturun, keyifli bir deneyim için yerinizi ayırtın.</p>
 
-      <p style="font-size:17px; margin-bottom:28px; max-width:700px; margin-left:auto; margin-right:auto; line-height:1.8;">
-        Menümüzü online inceleyebilir, rezervasyon için bize doğrudan WhatsApp üzerinden ulaşabilirsiniz.
-      </p>
-
-      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:14px; margin-bottom:10px;">
-        <a
-          href="https://keyfrestaurant.qr.menulux.com"
-          target="_blank"
-          rel="noopener"
-          style="display:inline-block; padding:14px 28px; background:#111111; color:#ffffff; border-radius:8px; text-decoration:none; font-size:16px; font-weight:600;"
-        >
-          Menüyü Gör
-        </a>
-
-        <a
-          href="https://wa.me/905325587784?text=Merhaba%2C%20Key-f%20Restaurant%20%26%20Cafe%20i%C3%A7in%20rezervasyon%20yapmak%20istiyorum.%0A%0ATarih%3A%0AKi%C5%9Fi%20say%C4%B1s%C4%B1%3A%0ASaat%3A"
-          target="_blank"
-          rel="noopener"
-          style="display:inline-block; padding:14px 28px; background:#c8a97e; color:#111111; border-radius:8px; text-decoration:none; font-size:16px; font-weight:600;"
-        >
+        <a href="https://wa.me/905000000000" target="_blank" class="btn btn-primary">
           WhatsApp ile Rezervasyon
-        </a>
-      </div>
-    </section>
-
-    <section class="section soft-bg">
-      <div class="container" style="max-width:760px; text-align:center;">
-        <p class="section-label">Rezervasyon</p>
-        <h2 style="margin-bottom:16px;">Masanızı Ayırtın</h2>
-        <p style="margin-bottom:24px; line-height:1.8;">
-          Tarih, saat ve kişi sayısını WhatsApp üzerinden bize iletin.
-        </p>
-
-        <a
-          href="https://wa.me/905325587784?text=Merhaba%2C%20Key-f%20Restaurant%20%26%20Cafe%20i%C3%A7in%20rezervasyon%20yapmak%20istiyorum.%0A%0ATarih%3A%0AKi%C5%9Fi%20say%C4%B1s%C4%B1%3A%0ASaat%3A"
-          target="_blank"
-          rel="noopener"
-          style="display:inline-block; padding:15px 32px; background:#25D366; color:#ffffff; border-radius:8px; text-decoration:none; font-size:16px; font-weight:600;"
-        >
-          WhatsApp ile Rezervasyon Yap
         </a>
       </div>
     </section>
   </main>
 
-  <footer id="contact" class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h3>Key-f Restaurant &amp; Cafe</h3>
-        <p>Didim Marina’da deniz manzarası eşliğinde kahvaltı, akşam yemeği ve içecek keyfi.</p>
-      </div>
-      <div>
-        <h4>İletişim</h4>
-        <p><a href="tel:+905325587784">+90 532 558 77 84</a></p>
-        <p><a href="https://wa.me/905325587784" target="_blank" rel="noopener">WhatsApp</a></p>
-      </div>
-      <div>
-        <h4>Konum</h4>
-        <p>Didim Marina</p>
-        <p><a href="https://www.google.com/maps/search/?api=1&query=Key-f+Restaurant+%26+Cafe+Didim" target="_blank" rel="noopener">Google Maps'te Aç</a></p>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
