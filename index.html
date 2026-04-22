@@ -3,15 +3,350 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Key-f Restaurant & Cafe | Didim</title>
-  <meta name="description" content="Didim Marina’da kahvaltı, öğle ve akşam yemeği için Key-f Restaurant & Cafe." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <title>Key-f Restaurant & Cafe | Didim Marina</title>
+  <meta
+    name="description"
+    content="Didim Marina’da kahvaltıdan akşam yemeğine uzanan keyifli bir deneyim. Menü ve rezervasyon için Key-f Restaurant & Cafe."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: #1f1a17;
+      background: #f7f2eb;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(247, 242, 235, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .header-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #5f7b6e;
+      white-space: nowrap;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .main-nav a {
+      color: #2b2926;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: color 0.25s ease;
+    }
+
+    .main-nav a:hover {
+      color: #b98949;
+    }
+
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 44px;
+      height: 38px;
+      padding: 0 12px;
+      border-radius: 10px;
+      border: 1px solid #c8b79f;
+      background: #fffaf3;
+      color: #6a5641;
+      font-size: 0.9rem;
+      font-weight: 700;
+      transition: all 0.25s ease;
+    }
+
+    .lang-btn:hover {
+      border-color: #b98949;
+      color: #b98949;
+    }
+
+    .lang-btn.active {
+      background: #c79a5c;
+      border-color: #c79a5c;
+      color: #1f1a17;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 20px 80px;
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),
+        url("hero.jpg") center center / cover no-repeat;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 820px;
+      padding: 28px 32px;
+      background: rgba(20, 18, 16, 0.20);
+      backdrop-filter: blur(4px);
+      border-radius: 18px;
+    }
+
+    .hero-subtitle {
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #f2e7d8;
+    }
+
+    .hero h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(3.4rem, 8vw, 6.2rem);
+      line-height: 0.95;
+      font-weight: 600;
+      color: #f6e9d7;
+      margin-bottom: 28px;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.30);
+    }
+
+    .hero-buttons,
+    .menu-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 190px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    .btn-primary {
+      background: #c79a5c;
+      color: #1f1a17;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+    }
+
+    .btn-primary:hover {
+      background: #b98949;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.90);
+      color: #1f1a17;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+    }
+
+    .btn-secondary:hover {
+      background: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .content-section {
+      padding: 96px 20px;
+    }
+
+    .section-light {
+      background: #f7f2eb;
+    }
+
+    .section-soft {
+      background: #f1ebe3;
+    }
+
+    .section-container {
+      max-width: 980px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      color: #6c6258;
+    }
+
+    .content-section h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.6rem, 5vw, 4.2rem);
+      line-height: 1.05;
+      margin-bottom: 18px;
+      color: #111;
+    }
+
+    .content-section p {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #5a5a5a;
+    }
+
+    .menu-buttons {
+      margin-top: 34px;
+    }
+
+    @media (max-width: 1024px) {
+      .header-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .main-nav {
+        order: 3;
+        width: 100%;
+        gap: 18px;
+      }
+
+      .lang-switch {
+        order: 2;
+      }
+
+      .logo {
+        text-align: center;
+      }
+
+      .hero {
+        min-height: 82vh;
+        padding-top: 110px;
+      }
+
+      .hero-content {
+        max-width: 92%;
+        padding: 22px 20px;
+      }
+
+      .content-section p {
+        font-size: 1.08rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        padding: 16px;
+      }
+
+      .logo {
+        font-size: 1.9rem;
+      }
+
+      .main-nav {
+        gap: 14px;
+      }
+
+      .main-nav a {
+        font-size: 0.95rem;
+      }
+
+      .lang-btn {
+        min-width: 42px;
+        height: 36px;
+        font-size: 0.85rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.8rem, 11vw, 4.4rem);
+      }
+
+      .hero-subtitle {
+        font-size: 0.78rem;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .hero-buttons,
+      .menu-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content-section {
+        padding: 78px 18px;
+      }
+
+      .content-section p {
+        font-size: 1rem;
+        line-height: 1.75;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 1.6rem;
+      }
+
+      .content-section h2 {
+        font-size: 2.4rem;
+      }
+
+      .hero-content {
+        border-radius: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
-
   <header class="site-header">
     <div class="header-inner">
       <a href="#top" class="logo">Key-f Restaurant &amp; Cafe</a>
@@ -32,8 +367,6 @@
 
   <main>
     <section class="hero" id="top">
-      <div class="hero-overlay"></div>
-
       <div class="hero-content">
         <p class="hero-subtitle">Didim Marina</p>
         <h1>Key-f Restaurant &amp; Cafe</h1>
@@ -86,12 +419,13 @@
         <h2>Masanızı Ayırtın</h2>
         <p>Rezervasyonunuzu kolayca oluşturun, keyifli bir deneyim için yerinizi ayırtın.</p>
 
-        <a href="https://wa.me/905000000000" target="_blank" class="btn btn-primary">
-          WhatsApp ile Rezervasyon
-        </a>
+        <div style="margin-top: 34px;">
+          <a href="https://wa.me/905000000000" target="_blank" class="btn btn-primary">
+            WhatsApp ile Rezervasyon
+          </a>
+        </div>
       </div>
     </section>
   </main>
-
 </body>
 </html>
