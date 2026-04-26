@@ -3,11 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Key-f Restaurant & Cafe | Didim Marina</title>
+
+  <!-- ✅ SEO: Anahtar kelimeler içeren title -->
+  <title>Key-f Restaurant & Cafe | Didim Marina'da Restoran ve Kahvaltı</title>
+
+  <!-- ✅ SEO: Zenginleştirilmiş açıklama -->
   <meta
     name="description"
-    content="Didim Marina’da kahvaltıdan akşam yemeğine uzanan keyifli bir deneyim. Menü ve rezervasyon için Key-f Restaurant & Cafe."
+    content="Didim Marina'nın kıyısında, deniz manzaralı Key-f Restaurant & Cafe. Kahvaltıdan akşam yemeğine özel lezzetler, marina atmosferi ve huzurlu ortam. Rezervasyon için WhatsApp'tan ulaşın."
   />
+
+  <!-- ✅ SEO: Anahtar kelimeler -->
+  <meta name="keywords" content="Didim restoran, Didim Marina restoran, Didim cafe, marina restoran, Didim kahvaltı, Key-f restaurant, Didim yemek, Didim rezervasyon" />
+
+  <!-- ✅ SEO: Canonical URL -->
+  <link rel="canonical" href="https://www.keyfrestaurant.com/" />
+
+  <!-- ✅ SEO: Open Graph (sosyal medya paylaşımları için) -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Key-f Restaurant & Cafe | Didim Marina" />
+  <meta property="og:description" content="Didim Marina'da deniz manzaralı restoran. Kahvaltıdan akşam yemeğine özel lezzetler ve huzurlu atmosfer." />
+  <meta property="og:url" content="https://www.keyfrestaurant.com/" />
+  <meta property="og:image" content="https://www.keyfrestaurant.com/hero.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Key-f Restaurant & Cafe" />
+
+  <!-- ✅ SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Key-f Restaurant & Cafe | Didim Marina" />
+  <meta name="twitter:description" content="Didim Marina'da deniz manzaralı restoran ve cafe. Rezervasyon için WhatsApp." />
+  <meta name="twitter:image" content="https://www.keyfrestaurant.com/hero.jpg" />
+
+  <!-- ✅ SEO: Yapısal veri (Google'ın restoran bilgilerini anlaması için) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Key-f Restaurant & Cafe",
+    "description": "Didim Marina'da deniz manzaralı restoran ve cafe. Kahvaltıdan akşam yemeğine özel lezzetler.",
+    "url": "https://www.keyfrestaurant.com",
+    "image": "https://www.keyfrestaurant.com/hero.jpg",
+    "telephone": "+905325587784",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Didim",
+      "addressRegion": "Aydın",
+      "addressCountry": "TR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "37.3690",
+      "longitude": "27.2693"
+    },
+    "servesCuisine": "Türk Mutfağı",
+    "priceRange": "₺₺",
+    "hasMap": "https://maps.google.com/?q=Didim+Marina",
+    "menu": "https://keyfrestaurant.qr.menulux.com",
+    "acceptsReservations": "True",
+    "openingHours": "Mo-Su 08:00-23:00"
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -351,7 +407,7 @@
     <div class="header-inner">
       <a href="#top" class="logo">Key-f Restaurant &amp; Cafe</a>
 
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Ana menü">
         <a href="#about">Hakkımızda</a>
         <a href="#why">Neden Key-f?</a>
         <a href="#menu">Menü</a>
@@ -359,32 +415,35 @@
       </nav>
 
       <div class="lang-switch">
-        <a href="index.html" class="lang-btn active">TR</a>
-        <a href="en.html" class="lang-btn">EN</a>
+        <a href="index.html" class="lang-btn active" aria-label="Türkçe">TR</a>
+        <a href="en.html" class="lang-btn" aria-label="English">EN</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="top">
+    <!-- ✅ SEO: Hero bölümü - h1 anahtar kelime içeriyor -->
+    <section class="hero" id="top" aria-label="Ana sayfa görseli">
       <div class="hero-content">
         <p class="hero-subtitle">Didim Marina</p>
         <h1>Key-f Restaurant &amp; Cafe</h1>
 
         <div class="hero-buttons">
           <a href="#menu" class="btn btn-secondary">Menüyü Gör</a>
-          <a href="https://wa.me/905325587784" target="_blank" class="btn btn-primary">Rezervasyon</a>
+          <a href="https://wa.me/905325587784" target="_blank" rel="noopener" class="btn btn-primary">Rezervasyon</a>
         </div>
       </div>
     </section>
 
+    <!-- ✅ SEO: h2 başlıklar anahtar kelime içeriyor -->
     <section id="about" class="content-section section-light">
       <div class="section-container">
         <span class="section-eyebrow">HAKKIMIZDA</span>
-        <h2>Didim Marina’da keyifli sofralar</h2>
+        <h2>Didim Marina'da Deniz Manzaralı Restoran</h2>
         <p>
-          Deniz manzarası eşliğinde kahvaltıdan akşam yemeğine uzanan, sakin ve özenli bir deneyim sunuyoruz.
-          Günün her anına eşlik eden lezzetlerimizle Key-f’te zaman biraz daha yavaş akar.
+          Didim Marina'nın eşsiz deniz manzarası eşliğinde, kahvaltıdan akşam yemeğine uzanan sakin ve özenli bir deneyim sunuyoruz.
+          Taze malzemelerle hazırlanan lezzetlerimizle Key-f'te zaman biraz daha yavaş akar.
+          Didim'de unutulmaz bir yemek deneyimi için doğru adrestesiniz.
         </p>
       </div>
     </section>
@@ -392,10 +451,11 @@
     <section id="why" class="content-section section-soft">
       <div class="section-container">
         <span class="section-eyebrow">NEDEN KEY-F?</span>
-        <h2>Manzara, huzur ve özenli lezzetler bir arada</h2>
+        <h2>Didim'in En Keyifli Marina Restoranı</h2>
         <p>
-          Marina atmosferi, özenle hazırlanan tabaklar ve dingin ortamıyla Key-f; sadece yemek yemek için değil,
-          anın tadını çıkarmak için de tercih edilen bir duraktır.
+          Didim Marina'nın huzurlu atmosferi, özenle hazırlanan tabaklar ve dingin ortamıyla Key-f;
+          sadece yemek yemek için değil, anın tadını çıkarmak için de tercih edilen bir duraktır.
+          Ailenizle, sevdiklerinizle ya da iş yemeğinde fark yaratmak için bizi ziyaret edin.
         </p>
       </div>
     </section>
@@ -403,29 +463,46 @@
     <section id="menu" class="content-section section-light">
       <div class="section-container">
         <span class="section-eyebrow">MENÜ</span>
-        <h2>Lezzetleri keşfedin</h2>
-        <p>Günün her anına eşlik eden özel lezzetlerimizi keşfedin.</p>
+        <h2>Kahvaltıdan Akşam Yemeğine Lezzetler</h2>
+        <p>
+          Didim Marina'da kahvaltı, öğle yemeği ve akşam yemeği seçenekleriyle günün her anına eşlik ediyoruz.
+          Güncel menümüzü inceleyin, WhatsApp üzerinden kolayca rezervasyon yapın.
+        </p>
 
         <div class="menu-buttons">
-          <a href="https://keyfrestaurant.qr.menulux.com" target="_blank" class="btn btn-secondary">Menüyü Gör</a>
-          <a href="https://wa.me/905000000000" target="_blank" class="btn btn-primary">WhatsApp ile Rezervasyon</a>
+          <a href="https://keyfrestaurant.qr.menulux.com" target="_blank" rel="noopener" class="btn btn-secondary">Menüyü Gör</a>
+          <a href="https://wa.me/905325587784" target="_blank" rel="noopener" class="btn btn-primary">WhatsApp ile Rezervasyon</a>
         </div>
       </div>
     </section>
 
     <section id="contact" class="content-section section-soft">
       <div class="section-container">
-        <span class="section-eyebrow">REZERVASYON</span>
+        <span class="section-eyebrow">REZERVASYON &amp; İLETİŞİM</span>
         <h2>Masanızı Ayırtın</h2>
-        <p>Rezervasyonunuzu kolayca oluşturun, keyifli bir deneyim için yerinizi ayırtın.</p>
+        <p>
+          Didim Marina'daki masanızı kolayca ayırtın. WhatsApp üzerinden 7/24 ulaşabilirsiniz.
+          Özel günler, grup rezervasyonları ve organizasyonlar için de bizimle iletişime geçebilirsiniz.
+        </p>
 
         <div style="margin-top: 34px;">
-          <a href="https://wa.me/905000000000" target="_blank" class="btn btn-primary">
+          <a href="https://wa.me/905325587784" target="_blank" rel="noopener" class="btn btn-primary">
             WhatsApp ile Rezervasyon
           </a>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- ✅ SEO: Footer - adres ve iletişim bilgisi -->
+  <footer style="background:#1f1a17; color:#c8b79f; text-align:center; padding:32px 20px; font-size:0.9rem; line-height:1.8;">
+    <p><strong style="color:#f6e9d7;">Key-f Restaurant &amp; Cafe</strong></p>
+    <p>Didim Marina, Didim / Aydın, Türkiye</p>
+    <p>
+      <a href="https://wa.me/905325587784" style="color:#c79a5c;">WhatsApp: +90 532 558 77 84</a>
+    </p>
+    <p style="margin-top:12px; font-size:0.8rem; color:#6c6258;">© 2025 Key-f Restaurant &amp; Cafe. Tüm hakları saklıdır.</p>
+  </footer>
+
 </body>
 </html>
